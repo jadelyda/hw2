@@ -3,7 +3,7 @@
 var movingBox;
 var clicks = 0;
 function setup() {
-  createCanvas(800,800);
+  createCanvas(500,800);
   movingBox = createSprite(width/2, height-50, 50, 50);
   movingBox.friction = .95;
   textSize(32);
@@ -18,7 +18,7 @@ function draw() {
   text(clicks + " clicks",100,50);
 
 if(movingBox.position.y < 0){
-text("You Win!\nPress any key to reset.",width/2,height/2);
+text("You lose!\nPress any key to reset.",width/2,height/2);
 }
 
 //First way I moved the box
